@@ -13,12 +13,13 @@ export const Login = () => {
             <form>
                 <label>
                     <span>Email</span>
-                    <input value={Email} onChange={e => setEmail(e.target.value)}/>
+                    <input value={Email} placeholder="Email" onChange={e => setEmail(e.target.value)}/>
+                    
                 </label>
 
                 <label>
                     <span>Senha</span>
-                    <input type={"password"} value={Senha} onChange={e => setSenha(e.target.value)}/>
+                    <input type={"password"} value={Senha}  placeholder="Senha" onChange={e => setSenha(e.target.value)}/>
                 </label>
                 <button type="button" onClick={handdleEntrar}>Entrar</button>
             </form>
