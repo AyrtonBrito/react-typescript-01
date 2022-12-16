@@ -1,5 +1,11 @@
+import { Link } from 'react-router-dom';
+
 export const Dashboard = () => {
     return (
-        <p>Página dois</p>
+        <div>
+            <p>Página dois</p>
+
+            <Link to={"/login"}>Login</Link>
+        </div>
     );
 }
